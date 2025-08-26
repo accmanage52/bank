@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
-import Navbar from '@/components/Navbar'
-import { supabase } from '@/lib/supabaseClient'
-import RecordForm from '@/components/RecordForm'
-import RecordTable from '@/components/RecordTable'
+import Navbar from '../components/Navbar'
+import { supabase } from '../lib/supabaseClient'
+import RecordForm from '../components/RecordForm'
+import RecordTable from '../components/RecordTable'
 
 export default function AdminDashboard() {
   const [user, setUser] = useState(null)

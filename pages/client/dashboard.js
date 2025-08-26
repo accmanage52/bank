@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react'
-import Navbar from '@/components/Navbar'
-import { supabase } from '@/lib/supabaseClient'
-import VirtualDebitCard from '@/components/VirtualDebitCard'
+import Navbar from '../../components/Navbar';
+import { supabase } from '../../lib/supabaseClient';
+import VirtualDebitCard from '../../components/VirtualDebitCard';
+
 
 export default function ClientDashboard() {
   const [user, setUser] = useState(null)

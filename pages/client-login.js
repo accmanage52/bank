@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
-import { supabase } from '@/lib/supabaseClient'
-import Navbar from '@/components/Navbar'
+import { supabase } from '../lib/supabaseClient'
+import Navbar from '../components/Navbar'
 
 export default function ClientLogin() {
   const [email, setEmail] = useState('')

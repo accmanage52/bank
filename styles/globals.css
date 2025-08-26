@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #__next { height: 100%; }
+body {
+  @apply bg-cred-gradient text-white antialiased;
+}
+.glass {
+  @apply bg-white/5 backdrop-blur-lg border border-white/10 shadow-glow;
+}
+.input {
+  @apply w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 outline-none focus:ring-2 focus:ring-credTeal placeholder-white/50;
+}
+.btn {
+  @apply inline-flex items-center justify-center rounded-xl px-4 py-3 font-semibold transition;
+}
+.btn-primary {
+  @apply bg-credTeal text-black hover:opacity-90;
+}
+.btn-outline {
+  @apply border border-white/20 hover:bg-white/10;
+}
+.card {
+  @apply glass rounded-2xl p-5;
+}
+.table {
+  @apply w-full text-left;
+}
+.th, .td {
+  @apply py-3 px-4 border-b border-white/10;
+}
+.badge {
+  @apply inline-flex items-center rounded-full px-3 py-1 text-xs bg-white/10 border border-white/10;
+}
+.link { @apply text-credTeal hover:underline; }

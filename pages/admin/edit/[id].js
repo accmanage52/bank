@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
-import Navbar from '@/components/Navbar'
-import { supabase } from '@/lib/supabaseClient'
+import Navbar from '../components/Navbar'
+import { supabase } from '../lib/supabaseClient'
 
 export default function EditRecord() {
   const router = useRouter()
